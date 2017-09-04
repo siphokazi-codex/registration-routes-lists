@@ -3,23 +3,55 @@ body {
   background-color: #ccf2ab;
 }
 
-.registration {
-  border-radius: 5px;
-  background-color: #f4ea55;
-  width: 13%;
-  padding: 7px 0px 7px 45px;
-  font-size: 30px;
-  border: 2px solid black;
-  font-weight: bold;
+ul {
+    overflow-y: scroll;
 }
 
 ul li {
   list-style: none;
   text-decoration: none;
   font-size: 20px;
-  background-color: #f48342;
-  border-radius: 3px;
-  margin-bottom: 5px;
-  padding: 2px;
-  width: 50%;
+  background-color: #f4ea55;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  padding: 7px 0px 7px 50px;
+  width: 15%;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+h1 {
+  color: #273515;
+  font-size: 36px;
+}
+
+.container {
+  background-color: #fff;
+  width: 75%;
+  margin: auto;
+  padding: 1em;
+  font-family: "Arial";
+}
+
+label {
+  color: #6b2903;
+  font-size: 20px;
+}
+
+.regTxt {
+  margin-left: 30px;
+  font-size: 17px;
+  color: #281101;
+}
+
+.add {
+  margin: 20px 0px 0px 322px;
+  background-color: #6aa86a;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.error, .addRegistration {
+  color: #9b1f0c;
 }

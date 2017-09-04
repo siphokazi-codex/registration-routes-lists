@@ -1,7 +1,35 @@
-<div>
-  <h1>Add Registration Numbers</h1>
-  <div class="registration">
-    {{registration}}
-  </div>
+ <div class="container">
+  <h1>Registration Numbers WebApp</h1>
+  <!--<div class="registration">-->
+    <form action="/registration/add" method="post">
+        <br>
+        <label>Registration Number:<label>
+        <input class="regTxt" type="text" name="registration" placeholder="Enter Registration Number"></br>
+        <input class="add" type="submit" name="" value="Add Number"><br><br>
+
+        <div class="addRegistration">
+          {{messages.addRegistration}}
+          <br>
+          <br>
+        </div>
+
+        {{#if messages.error}}
+          <div class="error">
+            {{messages.error}}
+            <br>
+            <br>
+          </div>
+        {{/if}}
+
+        <div class="regList">
+          <ul>
+            {{#each registration}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      <div>
+      </form>
+  <!--</div>-->
 
 </div>

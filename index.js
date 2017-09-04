@@ -29,8 +29,12 @@ app.use(bodyParser.json())
  //res.send('RegistrationNumbers!');
 //});
 
-app.get('/registration', registrationNumbers.getForm);
-app.get('/registration/:registration', registrationNumbers.add);
+//app.get('/registration', registrationNumbers.getForm);
+//app.get('/registration', registration.add);
+
+app.get('/registration/add', registrationNumbers.add);
+app.post('/registration/add', registrationNumbers.add);
+//app.get('/registration/:registration', registrationNumbers.add);
 
 //start the server
 var server = app.listen(3001, function () {
