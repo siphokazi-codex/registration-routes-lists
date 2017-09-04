@@ -1,0 +1,25 @@
+
+body {
+  background-color: #ccf2ab;
+}
+
+.registration {
+  border-radius: 5px;
+  background-color: #f4ea55;
+  width: 13%;
+  padding: 7px 0px 7px 45px;
+  font-size: 30px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #f48342;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 2px;
+  width: 50%;
+}
