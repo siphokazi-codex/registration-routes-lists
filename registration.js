@@ -10,19 +10,18 @@ module.exports = function(){
 
   const add = function(req, res){
 
-
     var registration = req.body.registration;
-    var regResult = registration.toUpperCase();
+    //var regResult = registration.toUpperCase();
 
     var foundRegistration = regList.find(function(currentRegistration){
-      return currentRegistration === regResult;
+      return currentRegistration === registration;
     });
 
-    if (!regResult){
+    if (!registration){
       req.flash('error', 'Registration Number should not be blank');
     }
     else if (!foundRegistration){
-      regList.push(regResult);
+      regList.push(registration);
       req.flash('addRegistration', 'Registration Number added successfully');
     }
     else{
