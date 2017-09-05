@@ -10,12 +10,9 @@ module.exports = function(){
 
   const add = function(req, res){
 
+
     var registration = req.body.registration;
     var regResult = registration.toUpperCase();
-
-    //regList.push(registration)
-
-    //res.render('registration/add', {registration});
 
     var foundRegistration = regList.find(function(currentRegistration){
       return currentRegistration === regResult;
