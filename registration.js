@@ -2,11 +2,11 @@ module.exports = function(){
 
   const regList = [];
 
-  const getForm = function(req, res){
-
-    var registration = req.params.registration;
-    res.render('registration/add', {registration : regList});
-  };
+  // const getForm = function(req, res){
+  //
+  //   var registration = req.params.registration;
+  //   res.render('registration/add', {registration : regList});
+  // };
 
   const add = function(req, res){
 
@@ -33,7 +33,7 @@ module.exports = function(){
 
   return {
 
-    getForm,
+    //getForm,
     add
   }
 
